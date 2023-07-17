@@ -1,8 +1,6 @@
 name: Cypress Github Tests
 
-on:
-  schedule:
-    - cron: "*/15 * * * *"
+on: [push]
 
 jobs:
   cypress-run:
