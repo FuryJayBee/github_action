@@ -1,6 +1,8 @@
 name: Cypress Github Tests
 
-on: [pull_request]
+on:
+  schedule:
+    - cron: "*/15 * * * *"
 
 jobs:
   cypress-run:
